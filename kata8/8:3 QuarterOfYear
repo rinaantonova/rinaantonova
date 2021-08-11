@@ -1,0 +1,25 @@
+{Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter;..}
+
+
+program eightthree_QuarterOfYear;
+uses crt;
+var
+    month : integer;
+    
+begin
+clrscr;
+writeln('enter a months number please: ');
+readln(month);
+
+   case month of
+      1..3 : writeln('its first quarter');
+      4..6 : writeln('its second quarter');
+      7..9 :  writeln('its third quarter');
+      10..12 : writeln('its fourth quarter');
+      else
+          writeln('oh way, you are dumb!');
+      end;
+   
+ 
+end.
