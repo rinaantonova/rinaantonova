@@ -1,0 +1,18 @@
+program sun;
+uses crt;
+var
+        x : integer;
+        
+begin 
+clrscr;
+    writeln('enter a temperature: ');
+    readln(x);
+
+    x := x*x;
+    writeln(x);
+
+        if (x > 1000)
+                then writeln('Its hotter than the sun!!')
+                else writeln('Help yourself to a honeycomb Yorkie for the glovebox');
+
+end.
