@@ -1,0 +1,21 @@
+{The cockroach is one of the fastest insects.
+Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).}
+
+
+
+
+program cockroach;
+uses crt;
+  var 
+    s : byte;
+    
+begin
+  clrscr;
+  writeln('enter speed ');
+  readln(s);
+
+    if s >= 1 then writeln (s/36:0:2)
+    else writeln('its unbelievable');
+    
+  
+end.
