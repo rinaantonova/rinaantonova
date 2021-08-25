@@ -16,6 +16,8 @@ Input constraints:
 
 
 
+//first solution +/-
+
 
 
 
@@ -32,4 +34,38 @@ begin
   
   writeln ('unsatisfied ', result);
 end.
+
+
+
+
+//the second solution ++/-
+
+
+
+
+program time;
+uses crt;
+  var
+        h, m, s,x1 , x2: longint;
+begin
+  clrscr;
+  writeln('enter time ');
+  readln(h, m, s);
+  
+  if (h <= 23)
+                then h := h * 3600000
+        else halt;
+  if (m <= 59)
+                then m := m * 60000
+        else halt;
+  if (s <= 59)
+                then s := s * 1000
+        else halt;
+        
+     
+        
+  
+  writeln(h+m+s);
+end.
+
 
